@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Electrical Installation Yola</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+        }
+        header img {
+            max-width: 150px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .engineer-image {
+            max-width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('img/1000047738.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 150px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+            animation: slideIn 5s infinite alternate;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            animation: slideIn 7s infinite alternate;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 10px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 40px;
+            animation: slideIn 1s ease-out;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .service-card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 30%;
+            text-align: left;
+        }
+        .service-card h3 {
+            color: #007BFF;
+        }
+        .engineer-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .engineer-card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: left;
+        }
+        .engineer-card h3 {
+            color: #007BFF;
+        }
+        .engineer-card p {
+            margin: 0;
+            color: #555;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .image-gallery img {
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .contact-form button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .email-button {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .email-button:hover {
+            background-color: #e64a19;
+        }
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/1000047738.jpg') no-repeat center center/cover;
+            animation: slide 5s infinite;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/1000183542.jpg" alt="All Electrical Installation Yola Logo">
+        <img src="img/engineer-suleiman.jpg" alt="Engineer Suleiman" class="engineer-image">
+        <h1>All Electrical Installation Yola</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#solar">Solar Installation</a>
+        <a href="#engineers">Our Engineers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-slider"></div>
+        <h2>Your Trusted Electrical & Solar Experts</h2>
+        <p>Providing reliable and professional electrical and solar installation services in Yola.</p>
+    </div>
+    <main>
+        <section id="home">
+            <h2>Welcome to All Electrical Installation Yola</h2>
+            <p>Your trusted partner for all electrical and solar installation needs in Yola.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Electrical Wiring</h3>
+                <p>We provide professional electrical wiring services for homes, offices, and industrial buildings. Our team ensures safe and efficient wiring solutions tailored to your needs.</p>
+                <p>Our services include:</p>
+                <ul>
+                    <li>New building wiring</li>
+                    <li>Rewiring of old buildings</li>
+                    <li>Electrical panel upgrades</li>
+                    <li>Circuit breaker installations</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Maintenance & Repairs</h3>
+                <p>We offer reliable maintenance and repair services to keep your electrical systems running smoothly. Our team is available 24/7 for emergency repairs.</p>
+                <p>Our services include:</p>
+                <ul>
+                    <li>Electrical system inspections</li>
+                    <li>Fault diagnosis and repairs</li>
+                    <li>Lighting repairs and upgrades</li>
+                    <li>Generator maintenance</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Solar Installation</h3>
+                <p>We specialize in the installation of solar panels and solar energy systems. Our solutions are designed to provide sustainable and cost-effective energy for your home or business.</p>
+                <p>Our services include:</p>
+                <ul>
+                    <li>Residential solar systems</li>
+                    <li>Commercial solar systems</li>
+                    <li>Solar panel maintenance</li>
+                    <li>Battery storage solutions</li>
+                </ul>
+            </div>
+        </section>
+        <section id="solar">
+            <h2>Solar Installation Services</h2>
+            <p>We specialize in providing high-quality solar installation services tailored to meet your energy needs. Our team of experts ensures that every installation is done to the highest standards.</p>
+            <p>Our solar installation process includes:</p>
+            <ul>
+                <li>Site assessment and energy audit</li>
+                <li>Customized solar system design</li>
+                <li>Professional installation</li>
+                <li>System testing and commissioning</li>
+                <li>Ongoing maintenance and support</li>
+            </ul>
+            <div class="image-gallery">
+                <img src="img/1000047738.jpg" alt="Solar Panel Installation">
+                <img src="img/1000047740.jpg" alt="Solar Panel Installation">
+                <img src="img/1000047674.jpg" alt="Battery Storage">
+                <img src="img/1000173535.jpg" alt="Battery Storage">
+            </div>
+        </section>
+        <section id="engineers">
+            <h2>Our Engineers</h2>
+            <div class="engineer-card">
+                <h3>Engineer Abubakar Sadiq Muhammad</h3>
+                <p>With over 10 years of experience in electrical and solar installations, Engineer Abubakar is a certified expert in renewable energy solutions. He specializes in large-scale commercial solar projects.</p>
+            </div>
+            <div class="engineer-card">
+                <h3>Engineer Suleiman</h3>
+                <p>Engineer Suleiman is a seasoned professional with a focus on residential electrical systems and solar installations. He is known for his attention to detail and customer satisfaction.</p>
+            </div>
+            <div class="engineer-card">
+                <h3>Engineer Arafat</h3>
+                <p>Engineer Arafat is an expert in electrical maintenance and repairs. He has a proven track record of solving complex electrical issues efficiently.</p>
+            </div>
+            <div class="engineer-card">
+                <h3>Engineer Ahmed</h3>
+                <p>Engineer Ahmed specializes in solar panel installations and battery storage solutions. He is passionate about providing sustainable energy solutions to his clients.</p>
+            </div>
+            <div class="engineer-card">
+                <h3>Engineer Jibrilla</h3>
+                <p>Engineer Jibrilla is a skilled professional with expertise in both electrical wiring and solar installations. He ensures that every project is completed to the highest standards.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries or to schedule a service, please reach out to us:</p>
+            <p>Phone: <a href="tel:08037813029">08037813029</a>, <a href="tel:0803332500">0803332500</a></p>
+            <p>Email: <a href="mailto:engineersuleiman12@gmail.com">engineersuleiman12@gmail.com</a></p>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form id="contact-form" action="https://wa.me/2348037813029" method="get" target="_blank">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Send via WhatsApp</button>
+                </form>
+                <a href="mailto:engineersuleiman12@gmail.com" class="email-button">Send Email</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 All Electrical Installation Yola. All rights reserved.</p>
+        <p>Created by Engineer Suleiman</p>
+    </footer>
+    <a href="https://wa.me/2348037813029" class="whatsapp-button" target="_blank">Chat on WhatsApp</a>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const whatsappUrl = https://wa.me/2348037813029?text=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)};
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
